@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:gravity="center"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/text2"
+        style="@style/CodeFontLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/weather_app" />
+
+    <TextView
+        android:id="@+id/text3"
+        style="@style/CodeFontMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/location" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edit"
+        android:ems="10"
+        android:hint="@string/eg"
+        android:padding="10dp" >
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_alignTop="@+id/editText1"
+        android:clickable="true"
+        android:padding="3dp"
+        android:src="@drawable/search" />
+
+    <TextView
+        android:id="@+id/text1"
+        style="@style/CodeFontMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/or" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/purple_button"
+        android:padding="10dp"
+        android:text="@string/search"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignTop="@+id/button1"
+        android:clickable="true"
+        android:paddingLeft="8dp"
+        android:src="@drawable/currentlocation_icon" />
+
+    <RadioGroup
+        android:id="@+id/radio1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_metric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/purple_button"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"
+            android:padding="10dp"
+            android:text="Metric" />
+
+        <RadioButton
+            android:id="@+id/radio_imperial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/purple_button"
+            android:button="@android:color/transparent"
+            android:onClick="onRadioButtonClicked"
+            android:padding="10dp"
+            android:text="Imperial" />
+    </RadioGroup>
+
+</RelativeLayout>

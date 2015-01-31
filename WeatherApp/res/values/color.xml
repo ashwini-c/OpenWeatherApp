@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="class_zero_background">#9f990000</color>
+    <color name="transparent">#00000000</color>
+    <color name="purple">#800000</color>
+    <color name="shadowPurple">#ff885a92</color>
+    <color name="lightPurple">#C00000</color>
+    <color name="darkPurple">#ff5b3e63</color>
+    <color name="bgPurple">#668F5E99</color>
+
+</resources>

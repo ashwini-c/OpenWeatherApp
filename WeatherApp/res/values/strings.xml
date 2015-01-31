@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Weather</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="location">Search City</string>
+    <string name="eg">e.g. Hamilton,NZ</string>
+    <string name="search">Find Me</string>
+    <string name="title_activity_display_data">Weather Deatils</string>
+    <string name="Weather">Weather at  </string>
+    <string name="title_activity_main">Weather</string>
+    <string name="weather_app">Open WeatherMap</string>
+    <string name="or">Or</string>
+
+</resources>
